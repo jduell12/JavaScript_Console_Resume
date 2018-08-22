@@ -32,5 +32,7 @@ console.log("My Interests: ");
 list(interests);
 console.log("\n");
 console.log("My Previous Experiences: ");
-displayPosition(pastPositions.company)
+for (let i = 0; i < pastPositions.length; i++){
+    displayPosition(pastPositions[i].company, pastPositions[i].title, pastPositions[i].work);
+}
 
